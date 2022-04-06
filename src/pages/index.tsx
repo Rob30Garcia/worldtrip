@@ -1,7 +1,8 @@
-import { Flex, Text } from '@chakra-ui/react'
+import { Flex } from '@chakra-ui/react'
 import type { NextPage } from 'next'
 import { Banner } from '../Components/Banner'
 import { Header } from '../Components/Header'
+import { TravelTypes } from '../Components/TravelTypes'
 
 const Home: NextPage = () => {
   return (
@@ -11,15 +12,10 @@ const Home: NextPage = () => {
       h="100vh"
       m='0'
       p='0'
-    >
+    >      
       <Header />
-
-      <Flex
-        w="100%"
-      >
-        <Banner />
-
-      </Flex>
+      <Banner />
+      <TravelTypes />
     </Flex>
   )
 }
