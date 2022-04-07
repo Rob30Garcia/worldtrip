@@ -2,6 +2,7 @@ import { Text, Center, Divider, Flex } from '@chakra-ui/react'
 import type { NextPage } from 'next'
 import { Banner } from '../Components/Banner'
 import { Header } from '../Components/Header'
+import { Slides } from '../Components/Slides'
 import { TravelTypes } from '../Components/TravelTypes'
 
 const Home: NextPage = () => {
@@ -46,6 +47,9 @@ const Home: NextPage = () => {
           Então escolha seu continente
         </Text>
       </Center>
+
+      <Slides />
+
     </Flex>
   )
 }
