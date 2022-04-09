@@ -38,7 +38,7 @@ const Home: NextPage = () => {
           color="gray.500"
         >
           Vamos nessa?
-        </Text>  
+        </Text>
         <Text
           fontSize={36}
           fontWeight="medium"
