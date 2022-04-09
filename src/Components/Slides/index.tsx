@@ -2,9 +2,6 @@ import { Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Image, Flex, Text, Box, Center } from '@chakra-ui/react';
 
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
 import { Content } from './Content';
 
 const continents = [
