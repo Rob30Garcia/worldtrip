@@ -10,7 +10,7 @@ import { Content } from './Content';
 const continents = [
   {
     name: 'América do Norte',
-    img: 'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1544&q=80',
+    img: 'https://images.unsplash.com/photo-1543372654-b45dd90eeee5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
     phrase: 'A américa desenvolvida'
   },
   {
@@ -30,12 +30,12 @@ const continents = [
   },
   {
     name: 'Europa',
-    img: 'https://images.unsplash.com/photo-1520939817895-060bdaf4fe1b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1623&q=80',
+    img: 'https://images.unsplash.com/photo-1490642914619-7955a3fd483c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1193&q=80',
     phrase: 'O continente mais antigo'
   },
   {
     name: 'Oceania',
-    img: 'https://images.unsplash.com/photo-1589330273594-fade1ee91647?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8b2NlYW5pYXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60',
+    img: 'https://images.unsplash.com/photo-1484007880226-8849602bb447?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1501&q=80',
     phrase: 'O Novíssimo continente'
   }
 ]
