@@ -1,4 +1,4 @@
-import { Flex, Image } from "@chakra-ui/react";
+import { Flex, SimpleGrid, Image } from "@chakra-ui/react";
 
 import Logo from '../../public/images/Logo.svg';
 
@@ -7,15 +7,27 @@ export function Header() {
     <Flex
       as="header"
       w="100%"
-      minHeight="100px"
+      mx='auto'
+      px='1rem'
+      minHeight={["50px", "100px"]}
       align="center"
       justify="center"
     >
-      <Image 
-        src="/images/Logo.svg" 
-        alt="Logo"
-        height={45}
-      />
+      <SimpleGrid
+        h="100%"
+        mx="auto"
+        w="100%"
+        maxWidth="1160px"
+        alignItems="center"
+        templateColumns="repeat(3,fr)"
+        justifyContent="center"
+      >
+        <Image 
+          src="/images/Logo.svg" 
+          alt="Logo"
+          height={45}
+        />
+      </SimpleGrid>
     </Flex>
   );
 }
