@@ -1,4 +1,5 @@
-import { Box, Center, Flex, Image, Text } from "@chakra-ui/react";
+import { Center, Flex, Image, Text } from "@chakra-ui/react";
+import Link from "next/link";
 
 interface ContentProps {
   continent: {
@@ -10,43 +11,47 @@ interface ContentProps {
 
 export function Content({ continent }: ContentProps) {
   return (
-   <Flex
-    width="100%"
-    height="100%"
-   >
-     <Image 
-        height='100%'
-        width='100%'
-        src={continent.img}
-        alt={continent.name}
-        objectFit='cover'
-        position='relative'
-      />
-
-      <Center
-        position='absolute'
-        width='100%'
-        height='100%'
-        flexDirection="column"
-      >
-        <Text
-          fontSize={48}
-          fontWeight='bold'
-          color='gray.10'
+    <Link
+      href={`continents/${continent.name}`}
+    >
+      <a>
+        <Flex
+          width="100%"
+          height="100%"
         >
-          {continent.name}
-        </Text>
+          <Image 
+            height='100%'
+            width='100%'
+            src={continent.img}
+            alt={continent.name}
+            objectFit='cover'
+            position='relative'
+          />
 
-        <Text
-          fontSize={24}
-          fontWeight='bold'
-          color='gray.50'
-        >
-          {continent.phrase}
-        </Text>
-      </Center>
+          <Center
+            position='absolute'
+            width='100%'
+            height='100%'
+            flexDirection="column"
+          >
+            <Text
+              fontSize={48}
+              fontWeight='bold'
+              color='gray.10'
+            >
+              {continent.name}
+            </Text>
 
-      
-   </Flex>
+            <Text
+              fontSize={24}
+              fontWeight='bold'
+              color='gray.50'
+            >
+              {continent.phrase}
+            </Text>
+          </Center>
+        </Flex>
+      </a>
+    </Link>
   );
 }
