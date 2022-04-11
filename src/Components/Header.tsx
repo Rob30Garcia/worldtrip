@@ -1,8 +1,12 @@
-import { Flex, SimpleGrid, Image } from "@chakra-ui/react";
-
-import Logo from '../../public/images/Logo.svg';
+import { Flex, Image, Icon, Grid } from "@chakra-ui/react";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import { RiArrowLeftSLine } from 'react-icons/ri';
 
 export function Header() {
+  const { asPath } = useRouter();
+  const notHomePage = asPath !== "/";
+
   return (
     <Flex
       as="header"
@@ -13,21 +17,40 @@ export function Header() {
       align="center"
       justify="center"
     >
-      <SimpleGrid
+      <Grid
+        templateColumns="repeat(3,1fr)"
         h="100%"
         mx="auto"
         w="100%"
         maxWidth="1160px"
         alignItems="center"
-        templateColumns="repeat(3,fr)"
         justifyContent="center"
       >
+        {
+          notHomePage && (
+            <Link
+              href="/"
+            >
+              <a>
+                <Icon 
+                  as={RiArrowLeftSLine}
+                  fontSize={32}
+                  justifySelf="start"
+                />
+              </a>
+            </Link>
+          )
+        }
+
         <Image 
           src="/images/Logo.svg" 
           alt="Logo"
           height={45}
+          width="180px"
+          gridColumn="2"
+          justifySelf="center"
         />
-      </SimpleGrid>
+      </Grid>
     </Flex>
   );
 }
