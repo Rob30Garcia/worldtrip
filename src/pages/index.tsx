@@ -3,7 +3,7 @@ import type { NextPage } from 'next'
 import { Banner } from '../Components/Banner'
 import { Header } from '../Components/Header'
 import { Slides } from '../Components/Slides'
-import { TravelTypes } from '../Components/TravelTypes'
+import { TravelTypes } from '../Components/TravelType'
 
 const Home: NextPage = () => {
   return (
