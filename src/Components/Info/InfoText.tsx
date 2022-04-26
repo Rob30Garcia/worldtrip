@@ -1,4 +1,4 @@
-import { Flex, Grid, Heading, Icon, Text } from "@chakra-ui/react";
+import { Flex, Grid, Heading, Icon, Text, Tooltip } from "@chakra-ui/react";
 import { AiOutlineInfoCircle} from 'react-icons/ai';
 
 export function InfoText() {
@@ -67,15 +67,20 @@ export function InfoText() {
             cidades +100
           </Text>
         </Flex>
-
-        <Icon
-          ml="1.5"
-          as={AiOutlineInfoCircle}
-          size="16"
-          color="gray.100"
-          alignSelf="flex-end"
-          mb="2.5"
-        />
+        <Tooltip
+          label='Mais informação'
+          bg='gray.300' 
+          color='black'
+        >
+          <Icon
+            ml="1.5"
+            as={AiOutlineInfoCircle}
+            size="16"
+            color="gray.100"
+            alignSelf="flex-end"
+            mb="2.5"
+          />
+        </Tooltip>
       </Flex>
 
     </Grid>
