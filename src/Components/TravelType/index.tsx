@@ -4,14 +4,14 @@ import { Type } from "./Type";
 export function TravelTypes() {
   return (
     <Grid
-      templateColumns="repeat(5, 1fr)"
+      templateColumns={["1fr 1fr", "1fr 1fr", "1fr 1fr", "repeat(5, 1fr)"]}
       w="100%"
       justifyContent="space-between"
       alignContent="center"
       mt="32"
       mx="auto"
       maxWidth="1160px"
-      gap={5}
+      gap={[1,5]}
     >
       <GridItem>
         <Type 
@@ -41,7 +41,7 @@ export function TravelTypes() {
         />
       </GridItem>
 
-      <GridItem>
+      <GridItem colSpan={[2, 2, 2, 1]}>
         <Type 
           icon="/icons/earth.svg"
           text="e mais ..."
