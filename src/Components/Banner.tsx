@@ -11,7 +11,7 @@ export function Banner() {
         src="/images/Background.png" 
         alt="background"
         width="100%"
-        maxHeight={350}
+        height={["164px", "250px", "250px", "350px"]}
         position="relative"
       />
 
@@ -19,31 +19,33 @@ export function Banner() {
         src="/images/Airplane.svg"
         alt="airplane"
         zIndex={1}
-        maxHeight="72"
-        width="lg"
+        width={["300px", "300px", "300px", "430px"]}
+        minHeight="163px"
+        display={["none", "none", "block"]}
         alignSelf="flex-end"
         position="absolute"
-        mt="20"
+        mt="24"
         mr="36"
       />
 
       <Box
         position="absolute"
-        boxSize="xl"
-        mt="20"
-        ml="36"
+        boxSize={["lg", "xl"]}
+        mx={["4", "10", "15", "20", "36"]}
+        my={["7", "10", "15", "20", "20"]}
       >
         <Text
-          fontSize={36}
+          fontSize={["xl", "2l", "2xl", "2xl", "4xl"]}
           fontWeight="medium"
           color="gray.10"
         >
-          5 Continentes, <br/>infinitas possibilidades.
+          5 Continentes, <br /> infinitas possibilidades.
         </Text>    
 
         <Text
-          fontSize={20}
+          fontSize={["0.8rem", "xl"]}
           color="gray.50"
+          maxWidth={["330px", "375px", "100%", "550px"]}
           mt="5"
         >
           Chegou a hora de tirar do papel a viagem que você sempre sonhou
