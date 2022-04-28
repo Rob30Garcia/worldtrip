@@ -1,6 +1,11 @@
-import { Box, Flex, Heading, Image, Text } from '@chakra-ui/react';
+import { Box, Flex, Heading, Image, Text, useBreakpointValue } from '@chakra-ui/react';
 
 export function Banner() {
+  const isMobile = useBreakpointValue({
+    base: false,
+    sm: true
+  })
+
   return (
     <Flex
       w="100%"
@@ -15,22 +20,26 @@ export function Banner() {
         position="relative"
       />
 
-      <Image 
-        src="/images/Airplane.svg"
-        alt="airplane"
-        zIndex={1}
-        width={["300px", "300px", "300px", "430px"]}
-        minHeight="163px"
-        display={["none", "none", "block"]}
-        alignSelf="flex-end"
-        position="absolute"
-        mt="24"
-        mr="36"
-      />
+      {
+        isMobile && (
+          <Image 
+            src="/images/Airplane.svg"
+            alt="airplane"
+            zIndex={1}
+            width={["300px", "300px", "300px", "430px"]}
+            display={["none", "none", "block"]}
+            alignSelf="flex-end"
+            position="absolute"
+            mt="24"
+            mr="36"
+          />
+        )
+      }
 
-      <Box
+      <Flex
+        direction="column"
         position="absolute"
-        boxSize={["lg", "xl"]}
+        boxSize={["xs", "sm", "md", "lg"]}
         mx={["4", "10", "15", "20", "36"]}
         my={["7", "10", "15", "20", "20"]}
       >
@@ -45,12 +54,12 @@ export function Banner() {
         <Text
           fontSize={["0.8rem", "xl"]}
           color="gray.50"
-          maxWidth={["330px", "375px", "100%", "550px"]}
+          width={["330px", "375px", "100%", "100%"]}
           mt="5"
         >
           Chegou a hora de tirar do papel a viagem que você sempre sonhou
         </Text>    
-      </Box>
+      </Flex>
     </Flex>
   );
 }
