@@ -1,4 +1,4 @@
-import { Text, Center, Divider, Flex } from '@chakra-ui/react'
+import { Text, Center, Divider, Flex, Heading } from '@chakra-ui/react'
 import type { NextPage } from 'next'
 import { Banner } from '../Components/Banner'
 import { Header } from '../Components/Header'
@@ -32,20 +32,14 @@ const Home: NextPage = () => {
         flexDirection='column'
         mt='14'
       >
-        <Text
-          fontSize={36}
-          fontWeight="medium"
-          color="gray.500"
+        <Heading
+          textAlign="center"
+          fontWeight="500"
+          mb={["5", "14"]}
+          fontSize={["lg", "3xl", "4xl"]}
         >
-          Vamos nessa?
-        </Text>
-        <Text
-          fontSize={36}
-          fontWeight="medium"
-          color="gray.500"
-        >
-          Então escolha seu continente
-        </Text>
+          Vamos nessa? <br />Então escolha seu continente
+        </Heading>
       </Center>
 
       <Slides />
