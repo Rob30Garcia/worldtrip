@@ -17,14 +17,14 @@ export default function Continents() {
 
       <Flex
         direction="column"
+        maxWidth="1160px"
         mx='auto'
-        px='1rem'
-        maxWidth="1440px"
+        mb="10"
+        px="1rem"
         align="center"
         justify="center"
       >
         <Info />
-
         <Cities />
       </Flex>
     </Flex>
