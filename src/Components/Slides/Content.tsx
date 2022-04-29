@@ -35,7 +35,7 @@ export function Content({ continent }: ContentProps) {
             flexDirection="column"
           >
             <Text
-              fontSize={48}
+              fontSize={["3xl", "4xl", "5xl"]}
               fontWeight='bold'
               color='gray.10'
             >
@@ -43,7 +43,7 @@ export function Content({ continent }: ContentProps) {
             </Text>
 
             <Text
-              fontSize={24}
+              fontSize={["0.8rem", "1xl", "2xl"]}
               fontWeight='bold'
               color='gray.50'
             >

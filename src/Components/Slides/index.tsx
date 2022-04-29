@@ -1,6 +1,6 @@
 import { Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Image, Flex, Text, Box, Center } from '@chakra-ui/react';
+import { Flex } from '@chakra-ui/react';
 
 import { Content } from './Content';
 
@@ -41,21 +41,30 @@ export function Slides() {
   return (
     <Flex
       width="100%"
-      px='10'
-      py='24'
+      maxWidth="1240px"
+      h={["250px", "450px"]}
+      mx="auto"
+      mb={["5", "10"]}
     >
       <Swiper
         modules={[Navigation, Pagination]}
         slidesPerView={1}
         navigation
-        pagination
+        pagination={{ clickable: true }}
+        autoplay={{
+          delay: 4000
+        }}
+        style={{
+          width: '100%',
+          flex: '1',
+        }}
       >
         {
           continents.map((continent) => (
             <SwiperSlide
               key={continent.name}
               style={{
-                height: 450,
+                height: '100%',
                 width: '100%',
                 alignItems: 'center',
                 textAlign: 'center',
