@@ -6,13 +6,12 @@ export function Info() {
   return (
     <Grid
       flexDirection="row"
-      templateColumns="repeat(2,1fr)"
+      templateColumns={["1fr", "1fr 1fr", "1.2fr 1fr"]}
       w="100%"
       alignItems="center"
       justifyContent="space-between"
-      px="20"
-      py="36"
-      gap={2}
+      my={["8", "20"]}
+      gap={[5, 10, 16, 20]}
     >
       <Bio />
       <InfoText />

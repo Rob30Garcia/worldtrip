@@ -6,22 +6,22 @@ export function InfoText() {
     <Grid
       templateColumns="repeat(3, 1fr)"
       gap={3}
+      mt={["4", "0"]}
     >
       <Flex
         direction="column"
-        align="center"
-        justifyContent="center"
+        align={["flex-start", "flex-start", "center"]}
       >
         <Heading
-          fontSize="48"
+          fontSize={["2xl", "5xl"]}
           color="yellow.100"
         >
           50
         </Heading>
         <Text
-          fontSize="24"
+          fontSize={["md", "xl"]}
           color="gray.500"
-          fontWeight="semibold"
+          fontWeight="600"
         >
           países
         </Text>
@@ -29,19 +29,18 @@ export function InfoText() {
 
       <Flex
         direction="column"
-        align="center"
-        justifyContent="center"
+        align={["flex-start", "flex-start", "center"]}
       >
         <Heading
-          fontSize="48"
+          fontSize={["2xl", "5xl"]}
           color="yellow.100"
         >
           60
         </Heading>
         <Text
-          fontSize="24"
+          fontSize={["md", "xl"]}
           color="gray.500"
-          fontWeight="semibold"
+          fontWeight="600"
         >
           línguas
         </Text>
@@ -50,19 +49,18 @@ export function InfoText() {
       <Flex>
         <Flex
           direction="column"
-          align="center"
-          justifyContent="center"
+          align={["flex-start", "flex-start", "center"]}
         >
           <Heading
-            fontSize="48"
+            fontSize={["2xl", "5xl"]}
             color="yellow.100"
           >
             27
           </Heading>
           <Text
-            fontSize="24"
+            fontSize={["md", "xl"]}
             color="gray.500"
-            fontWeight="semibold"
+            fontWeight="600"
           >
             cidades +100
           </Text>
